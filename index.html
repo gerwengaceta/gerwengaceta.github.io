@@ -2,79 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background: #fdfdfd;
-      color: #333;
-    }
-    h1, h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.3rem;
-    }
-    a { color: #0366d6; text-decoration: none; }
-    .section { margin-bottom: 2rem; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { margin-bottom: 0.5rem; }
-    .job-title { font-weight: bold; }
-    .date { float: right; font-size: 0.9em; color: #888; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p><a href="mailto:your@email.com">your@email.com</a> | 
-     <a href="https://github.com/yourusername">GitHub</a> | 
-     <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
-
-  <div class="section">
-    <h2>Summary</h2>
-    <p>Brief professional summary — 2-3 sentences about who you are and what you specialize in.</p>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>JavaScript, HTML, CSS</li>
-      <li>React, Node.js, Express</li>
-      <li>Python, Django</li>
-      <li>Git, GitHub, VS Code</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <div>
-      <div class="job-title">Software Developer, XYZ Corp <span class="date">2022–Present</span></div>
-      <ul>
-        <li>Built responsive web applications using React and Node.js.</li>
-        <li>Collaborated with designers and backend developers on agile teams.</li>
-      </ul>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Web Developer | Open Source Enthusiast | Lifelong Learner</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div>
-      <div class="job-title">Intern, ABC Inc. <span class="date">2021</span></div>
-      <ul>
-        <li>Assisted in developing internal tools using Python and Flask.</li>
-        <li>Wrote documentation and debugged legacy systems.</li>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate web developer with experience in building full-stack applications using JavaScript, React, Node.js, and more. I enjoy creating clean, efficient code and collaborating with teams to solve real-world problems.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="grid">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+        <li>Tailwind CSS</li>
+        <li>SQL & MongoDB</li>
+        <li>REST APIs</li>
       </ul>
-    </div>
-  </div>
+    </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>B.Sc. in Computer Science — Your University, 2020</p>
-  </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Software Developer — XYZ Corp</h3>
+        <span>2022 – Present</span>
+        <p>Built responsive web apps using React and Express. Collaborated with teams in Agile environments. Wrote reusable components and maintained test coverage.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Web Developer Intern — ABC Inc</h3>
+        <span>2021 – 2022</span>
+        <p>Created internal tools using JavaScript and improved site performance by 30%. Wrote documentation and contributed to code reviews.</p>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1</a> — Description of your project.</li>
-      <li><a href="https://github.com/yourusername/project2">Project 2</a> — Description of another project.</li>
-    </ul>
-  </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <strong><a href="https://github.com/yourusername/project1" target="_blank">Project One</a></strong> — A task management app built with React + Firebase.
+        </li>
+        <li>
+          <strong><a href="https://github.com/yourusername/project2" target="_blank">Project Two</a></strong> — A weather dashboard using Node.js and OpenWeatherMap API.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name. Built with ❤️ and HTML/CSS.</p>
+  </footer>
 </body>
 </html>
